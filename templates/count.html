@@ -1,0 +1,21 @@
+<h1> Count page </h1>
+
+
+<h1>Your text: </h1>
+<br/><p>{{ fulltext }}</p>
+
+
+<a href="{% url 'home' %}">
+ start over
+</a>
+
+<h2> number of word {{ count }} </h2>
+
+{% for word, number in  dictionary %}
+
+{{ word }}
+<br/>
+{{ number }}
+<br/>
+
+{% endfor %}
